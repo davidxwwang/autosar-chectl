@@ -1,4 +1,4 @@
-name: test_workflow
+name: david_test_workflow
 on:
   schedule:
   - cron: "0 14 * * 1-5"
