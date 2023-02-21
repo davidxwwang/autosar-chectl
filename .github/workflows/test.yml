@@ -1,7 +1,7 @@
 name: test_workflow
 on:
   schedule:
-  - cron: "35 13 * * 1-5"
+  - cron: "40 13 * * 1-5"
 jobs:
   release:
     name: release ${{ matrix.target }}
