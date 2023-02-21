@@ -1,7 +1,7 @@
 name: test_workflow
 on:
   schedule:
-  - cron: "40 13 * * 1-5"
+  - cron: "0 14 * * 1-5"
 jobs:
   release:
     name: release ${{ matrix.target }}
@@ -30,4 +30,4 @@ jobs:
         file: ${{ matrix.artifact_glob }}
         file_glob: true
         overwrite: true
-        tag: ${{ github.ref }
+        tag: ${{ github.ref }}
