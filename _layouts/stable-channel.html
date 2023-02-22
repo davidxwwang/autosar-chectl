@@ -1,0 +1,13 @@
+---
+layout: null
+---
+{% include last-stable-release.html %}{
+  "version": "{{lastRelease.name}}",
+  "channel": "stable",
+  "baseDir": "chectl",
+  "gz": "{{gzLink}}",
+  "node": {
+    "compatible": ">=8.0.0",
+    "recommended": "10.15.3"
+  }
+}
